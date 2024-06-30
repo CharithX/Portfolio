@@ -4,10 +4,12 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import DownloadButton from "./ui/DownloadButton";
 import { socialMedia } from "@/data";
-import { stats } from "@/data"; // Import the stats array
-import { useCountUp } from "use-count-up";
+// import { stats } from "@/data"; // Import the stats array
+// import { useCountUp } from "use-count-up";
 
 const Hero = () => {
+  // Example of escaping apostrophe inside JSX: I&apos;m Charith L Jayasingha
+
   return (
     <div className="xl:pb-20 pt-36" id="Home">
       <div>
@@ -43,18 +45,19 @@ const Hero = () => {
       <div className="flex justify-center relative my-10 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h1 className="uppercase tracking-widest text-xs text-center text-blue-100">
-            Hi, I'm Charith L Jayasingha
+            Hi, I&apos;m Charith L Jayasingha
           </h1>
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Full Stack Software Engineer & DevOps Enthusiast"
+            words="Full Stack Software Engineer &amp; DevOps Enthusiast"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
             Transforming Ideas into Interactive Realities
           </p>
           <DownloadButton />
-          <div className="xl:flex items-center justify-center gap-10 mx-auto xl:my-10 my-3 max-w-[120px]">
+          {/* <div className="xl:flex items-center justify-center gap-10 mx-auto xl:my-10 my-3 max-w-[120px]">
             {stats.map((stat) => {
+              // Use useCountUp hook here
               const { value } = useCountUp({
                 isCounting: true,
                 start: 0,
@@ -69,11 +72,13 @@ const Hero = () => {
                   className="flex items-center justify-center gap-5 mt-10"
                 >
                   <div className="font-bold xl:text-5xl text-2xl">{value}+</div>
-                  <div className="font-normal xl:text-xl text-sm">{stat.label}</div>
+                  <div className="font-normal xl:text-xl text-sm">
+                    {stat.label}
+                  </div>
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
