@@ -4,12 +4,15 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import DownloadButton from "./ui/DownloadButton";
 import { socialMedia } from "@/data";
-// import { stats } from "@/data"; // Import the stats array
-// import { useCountUp } from "use-count-up";
+import { stats } from "@/data"; // Import the stats array
+import { useCountUp } from "use-count-up";
 
 const Hero = () => {
-  // Example of escaping apostrophe inside JSX: I&apos;m Charith L Jayasingha
-
+ interface Stat {
+   id: string;
+   end: number;
+   label: string;
+ }
   return (
     <div className="xl:pb-20 pt-36" id="Home">
       <div>
@@ -55,32 +58,31 @@ const Hero = () => {
             Transforming Ideas into Interactive Realities
           </p>
           <DownloadButton />
-          {/* <div className="xl:flex items-center justify-center gap-10 mx-auto xl:my-10 my-3 max-w-[120px]">
-            {stats.map((stat) => {
-              // Use useCountUp hook here
-              const { value } = useCountUp({
-                isCounting: true,
-                start: 0,
-                end: stat.end,
-                duration: 2,
-                easing: "easeOutCubic",
-                decimalPlaces: 0,
-              });
-              return (
-                <div
-                  key={stat.id}
-                  className="flex items-center justify-center gap-5 mt-10"
-                >
-                  <div className="font-bold xl:text-5xl text-2xl">{value}+</div>
-                  <div className="font-normal xl:text-xl text-sm">
-                    {stat.label}
-                  </div>
-                </div>
-              );
-            })}
-          </div> */}
+          <div className="xl:flex items-center justify-center gap-10 mx-auto xl:my-10 my-3 max-w-[120px]">
+            {stats.map((stat) => (
+              <StatCounter key={stat.id} stat={stat} />
+            ))}
+          </div>
         </div>
       </div>
+    </div>
+  );
+};
+
+const StatCounter = ({ stat }) => {
+  const { value } = useCountUp({
+    isCounting: true,
+    start: 0,
+    end: stat.end,
+    duration: 2,
+    easing: "easeOutCubic",
+    decimalPlaces: 0,
+  });
+
+  return (
+    <div className="flex items-center justify-center gap-5 mt-10">
+      <div className="font-bold xl:text-5xl text-2xl">{value}+</div>
+      <div className="font-normal xl:text-xl text-sm">{stat.label}</div>
     </div>
   );
 };
