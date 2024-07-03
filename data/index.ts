@@ -78,7 +78,7 @@ export const projects = [
     des: "Dynamic property listings with advanced search by location, budget, and type, and integrated an interactive map for live property viewing with advanced filtering.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/express.svg", "/node.svg", "/fm.svg"],
-    link: "https://real-estate-frontend-jukh.onrender.com/",
+    link: "https://real-estate-sri-lanka.netlify.app/",
   },
   {
     id: 2,
