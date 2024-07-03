@@ -78,7 +78,7 @@ export const projects = [
     des: "Dynamic property listings with advanced search by location, budget, and type, and integrated an interactive map for live property viewing with advanced filtering.",
     img: "/p1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/express.svg", "/node.svg", "/fm.svg"],
-    link: "/https://github.com/CharithX/Real-Estate-Backend",
+    link: "https://real-estate-frontend-jukh.onrender.com/",
   },
   {
     id: 2,
@@ -86,7 +86,7 @@ export const projects = [
     des: "Developed a robust food ordering platform featuring real-time food updates, restaurant management, responsive interface, and secure payment transactions",
     img: "/p2.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/https://github.com/CharithX/Real-Estate-Backend",
+    link: "https://github.com/CharithX/Real-Estate-Backend",
   },
   {
     id: 3,
@@ -94,7 +94,7 @@ export const projects = [
     des: "E-commerce app with user-friendly authentication, real-time product updates, robust product management, responsive design, and secure payment integration for seamless transactions.",
     img: "/p3.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/https://github.com/CharithX/Real-Estate-Backend",
+    link: "https://github.com/CharithX/Real-Estate-Backend",
   },
 ];
 
