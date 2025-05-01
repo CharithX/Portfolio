@@ -1,6 +1,7 @@
 # 🌐 My Portfolio
 
 This is my personal portfolio website built with **Next.js** and **TypeScript (TSX)**. It showcases my projects, skills, experience, and contact information in a modern and responsive design.
+(https://portfolio-charithxs-projects.vercel.app)
 
 ## 🚀 Tech Stack
 
@@ -21,18 +22,17 @@ This is my personal portfolio website built with **Next.js** and **TypeScript (T
 - 🧾 SEO optimized with Next.js Head
 - 📤 Contact form integration (custom or using third-party service like Formspree)
 
-# 1. Clone the repository
+```bash
+# Clone the repository
 git clone https://github.com/CharithX/Portfolio.git
-
-# 2. Navigate into the project directory
 cd Portfolio
 
-# 3. Install dependencies
+# Install dependencies
 npm install
 # or
 yarn install
 
-# 4. Start the development server
+# Start the development server
 npm run dev
 # or
 yarn dev
