@@ -22,10 +22,10 @@ This is my personal portfolio website built with **Next.js** and **TypeScript (T
 - 📤 Contact form integration (custom or using third-party service like Formspree)
 
 # 1. Clone the repository
-git clone https://github.com/CharithX/Portfolio
+git clone https://github.com/CharithX/Portfolio.git
 
 # 2. Navigate into the project directory
-cd your-portfolio
+cd Portfolio
 
 # 3. Install dependencies
 npm install
@@ -38,3 +38,4 @@ npm run dev
 yarn dev
 
 # The app will be available at http://localhost:3000
+
